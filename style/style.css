@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 47%, 50%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --bright-yellow-hover: hsl(71, 80%, 54%);
+
+  /* Neutral */
+  --light-grey: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--light-grey);
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  max-width: 600px;
+  height: 450px;
+
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+
+  margin: 0 40px;
+  border-radius: 30px;
+}
+
+.top-section,
+.left-side,
+.right-side {
+  padding: 30px;
+}
+
+.top-section {
+  background-color: white;
+  grid-template-columns: 1fr;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-side {
+  background-color: rgb(64, 202, 145);
+  border-bottom-left-radius: 10px;
+}
+
+.sign-up-btn {
+  justify-self: center;
+  width: 5rem;
+}
+
+.right-side {
+  background-color: rgb(93, 131, 212);
+  border-bottom-right-radius: 10px;
+}
+
+/* 
+...........................................................................
+............................... Media query ...............................
+...........................................................................
+*/
+
+@media screen and (max-width: 370px) {
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+  .left-side {
+    border-bottom-left-radius: 0;
+  }
+  .right-side {
+    border-bottom-left-radius: 10px;
+  }
+}
