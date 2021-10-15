@@ -31,12 +31,10 @@ body {
 
 .container {
   max-width: 600px;
-  height: auto;
 
   display: grid;
   grid-template-rows: 1fr 1.4fr;
 
-  margin: 0 40px;
   box-shadow: 0 8px 16px #0003;
   border-radius: 10px;
 }
