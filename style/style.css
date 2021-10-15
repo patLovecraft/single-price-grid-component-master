@@ -115,6 +115,7 @@ body {
   border: none;
   background: var(--bright-yellow);
   cursor: pointer;
+  user-select: none;
   border-radius: 6px;
   color: white;
   box-shadow: 0 4px 8px #0003;
